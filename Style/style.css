@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.main {
+  height: 70vh;
+  background-image: url("./assest//images/bg.jpg");
+  background-position: center center;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+}
+.main .box {
+  height: 70vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0px;
+}
+nav {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60vw;
+  margin: auto;
+  padding-top: 20px;
+  height: 40px;
+}
+nav img {
+  /* height: 400px; */
+  color: green;
+  position: relative;
+  z-index: 10;
+  width: 8vw;
+}
+.btnss {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  height: calc(100% - 40px);
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 40px; */
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  gap: 23px;
+  text-align: center;
+}
+.hero span:first-child {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.hero :nth-child(2) {
+  font-size: 23px;
+}
+
+.sepration {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400px;
+  border: none;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.21);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn_red_sm {
+  background-color: red;
+  color: white;
+}
+.btn_red {
+  background-color: red;
+  color: white;
+  padding: 3px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+}
+.main input {
+  padding: 3px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.3);
+  color: white;
+  border: 1px solid rgba(246, 238, 238, 0.3);
+}
+
+.hero_buttons {
+  display: flex;
+  gap: 4px;
+}
+.first {
+  height: 70vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+.box1 {
+  width: 380px;
+  /* background-color: skyblue; */
+}
+.box1 .enjoy {
+  font-size: 40px;
+}
+.box1 .watch {
+  padding-top: 10px;
+  font-size: 1.5vw;
+}
+
+.img_box {
+  width: 400px;
+  position: relative;
+}
+.img_box img {
+  width: 400px;
+  position: relative;
+  z-index: 10;
+}
+.box2 video {
+  position: absolute;
+  left: 0px;
+  width: 400px;
+}
+
+.third_video {
+  width: 50px;
+  position: absolute;
+  z-index: -5;
+}
+
+
+.faq{
+  /* height: 40px; */
+  /* background-color: red; */
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+.net{
+  font-size: 4vw;
+  font-family: "Poppins", sans-serif;
+}
+.faq_box{
+  background-color: #2E2E2E;
+  width: 70vw;
+  height: 50px;
+  margin: auto;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 10px;
+  transition: all 1s ease-in-out;
+}
+.faq_box:hover{
+  background-color: grey;
+}
+footer{
+  width: 70vw;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+.footerr{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 40px;
+}
+.box-ft_1 a{
+  color: rgba(212, 198, 198, 0.9);
+  margin-top: 10px;
+
+}
+.box-ft_1{
+  display: flex;
+  flex-direction: column;
+}
+.copyRight{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+/* responsive  */
+@media screen and (max-width:768px) {
+  nav img{
+    width: 100px;
+  }
+    .first{
+      flex-wrap: wrap;
+      height: 700px;
+      text-align: center;
+
+    }
+    .box1 .enjoy{
+        font-size: 8vw;
+
+    }
+    .box1 .watch{
+      font-size: 5vw;
+      padding-top: 40px;
+
+    }
+    .faq{
+      margin-top: 40px;
+    }
+    .footerr{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+    footer a{
+      font-size: 3vw;
+      text-align: center;
+      padding: 10px;
+      text-decoration: underline;
+      color: darkred;
+    }
+    .copyRight{
+      font-size: 3vw;
+    }
+}
